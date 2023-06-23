@@ -34,6 +34,24 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'articleSubject',
+      title: 'Article Subject',
+      type: 'reference',
+      to: {type: 'articleSubject'},
+    }),
+    defineField({
+      name: 'college',
+      title: 'College',
+      type: 'reference',
+      to: {type: 'college'},
+    }),
+    defineField({
+      name: 'topic',
+      title: 'Topic',
+      type: 'reference',
+      to: {type: 'articleTopic'},
+    }),
+    defineField({
       name: 'tags',
       title: 'Tags',
       type: 'array',
