@@ -6,5 +6,7 @@ import calendar from './calendar'
 import college from './college'
 import articleSubject from './article-subject'
 import articleTopic from './article-topic'
+import gazette from './gazette'
+import annualReport from './annual-report'
 
-export const schemaTypes = [article, articleSubject, college, articleTopic, tag, author, calendar, blockContent]
+export const schemaTypes = [article, articleSubject, college, articleTopic, tag, author, gazette, annualReport, calendar, blockContent]
