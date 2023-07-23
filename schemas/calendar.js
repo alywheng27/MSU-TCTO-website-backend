@@ -20,6 +20,18 @@ export default defineType({
       }
     }),
     defineField({
+      name: 'semester',
+      title: 'Semester',
+      type: 'reference',
+      to: {type: 'semester'},
+    }),
+    defineField({
+      name: 'holiday',
+      title: 'Holiday',
+      type: 'reference',
+      to: {type: 'holiday'},
+    }),
+    defineField({
       name: 'body',
       title: 'Body',
       type: 'blockContent',

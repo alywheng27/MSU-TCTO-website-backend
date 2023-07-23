@@ -3,10 +3,14 @@ import author from './author'
 import article from './article'
 import tag from './tag'
 import calendar from './calendar'
+import semester from './semester'
+import holiday from './holiday'
 import college from './college'
 import articleSubject from './article-subject'
 import articleTopic from './article-topic'
+import articleCategory from './article-category'
 import gazette from './gazette'
+import gazetteQuarter from './gazette-quarter'
 import annualReport from './annual-report'
 
-export const schemaTypes = [article, articleSubject, college, articleTopic, tag, author, gazette, annualReport, calendar, blockContent]
+export const schemaTypes = [article, articleSubject, college, articleTopic, articleCategory, tag, author, gazette, gazetteQuarter, annualReport, calendar, semester, holiday, blockContent]

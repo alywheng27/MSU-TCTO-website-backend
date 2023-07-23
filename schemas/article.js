@@ -52,6 +52,12 @@ export default defineType({
       to: {type: 'articleTopic'},
     }),
     defineField({
+      name: 'category',
+      title: 'Category',
+      type: 'reference',
+      to: {type: 'articleCategory'},
+    }),
+    defineField({
       name: 'tags',
       title: 'Tags',
       type: 'array',
@@ -65,6 +71,12 @@ export default defineType({
         dateFormat: 'MMMM D, YYYY',
         calendarTodayLabel: 'Today'
       }
+    }),
+    defineField({
+      name: 'featured',
+      title: 'Featured article',
+      type: 'boolean',
+      initialValue: false,
     }),
     defineField({
       name: 'body',
