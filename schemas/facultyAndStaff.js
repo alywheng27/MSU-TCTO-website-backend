@@ -33,6 +33,12 @@ export default defineType({
         hotspot: true,
       },
     }),
+    defineField({
+      name: 'college',
+      title: 'College',
+      type: 'reference',
+      to: {type: 'college'},
+    }),
   ],
   preview: {
     select: {
