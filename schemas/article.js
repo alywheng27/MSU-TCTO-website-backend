@@ -9,11 +9,13 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
+      validation: (Rule) => Rule.required(),
       options: {
         source: 'title',
         maxLength: 96,
@@ -23,12 +25,14 @@ export default defineType({
       name: 'author',
       title: 'Author',
       type: 'reference',
+      validation: (Rule) => Rule.required(),
       to: {type: 'author'},
     }),
     defineField({
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
+      validation: (Rule) => Rule.required(),
       options: {
         hotspot: true,
       },
@@ -37,24 +41,28 @@ export default defineType({
       name: 'articleSubject',
       title: 'Article Subject',
       type: 'reference',
+      validation: (Rule) => Rule.required(),
       to: {type: 'articleSubject'},
     }),
     defineField({
       name: 'college',
       title: 'College',
       type: 'reference',
+      validation: (Rule) => Rule.required(),
       to: {type: 'college'},
     }),
     defineField({
       name: 'topic',
       title: 'Topic',
       type: 'reference',
+      validation: (Rule) => Rule.required(),
       to: {type: 'articleTopic'},
     }),
     defineField({
       name: 'category',
       title: 'Category',
       type: 'reference',
+      validation: (Rule) => Rule.required(),
       to: {type: 'articleCategory'},
     }),
     defineField({
@@ -67,6 +75,7 @@ export default defineType({
       name: 'publishedAt',
       title: 'Published at',
       type: 'date',
+      validation: (Rule) => Rule.required(),
       options: {
         dateFormat: 'MMMM D, YYYY',
         calendarTodayLabel: 'Today'
