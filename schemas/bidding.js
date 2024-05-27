@@ -18,15 +18,33 @@ export default defineType({
           accept: '.pdf',
         },
       }),
-      defineField({
-        name: 'dateOfPublication',
-        title: 'Date of Publication',
-        type: 'date',
-        options: {
-          dateFormat: 'MMMM D, YYYY',
-          calendarTodayLabel: 'Today'
-        }
-      }),
+    defineField({
+      name: 'dateOfPublication',
+      title: 'Date of Publication',
+      type: 'date',
+      options: {
+        dateFormat: 'MMMM D, YYYY',
+        calendarTodayLabel: 'Today'
+      }
+    }),
+    defineField({
+      name: 'price',
+      title: 'Price',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'email',
+      title: 'Email Address',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'number',
+      title: 'Contact Number',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
   ],
 
   preview: {
