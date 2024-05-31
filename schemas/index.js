@@ -12,8 +12,9 @@ import articleCategory from './article-category'
 import gazette from './gazette'
 import gazetteQuarter from './gazette-quarter'
 import annualReport from './annual-report'
+import sulimbang from './sulimbang'
 import facultyAndStaff from './facultyAndStaff'
 import bidding from './bidding'
 import banner from './banner'
 
-export const schemaTypes = [article, articleSubject, college, articleTopic, articleCategory, tag, author, gazette, gazetteQuarter, annualReport, calendar, semester, holiday, facultyAndStaff, bidding, banner, blockContent]
+export const schemaTypes = [article, articleSubject, college, articleTopic, articleCategory, tag, author, gazette, gazetteQuarter, annualReport, sulimbang, calendar, semester, holiday, facultyAndStaff, bidding, banner, blockContent]
