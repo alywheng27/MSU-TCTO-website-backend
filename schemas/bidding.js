@@ -40,6 +40,12 @@ export default defineType({
       // validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'contactPerson',
+      title: 'Contact Person',
+      type: 'string',
+      // validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: 'number',
       title: 'Contact Number',
       type: 'string',
