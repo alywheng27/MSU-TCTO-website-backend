@@ -39,6 +39,11 @@ export default defineType({
       type: 'reference',
       to: {type: 'college'},
     }),
+    defineField({
+      name: 'researchLink',
+      title: 'Research Link',
+      type: 'string',
+    }),
   ],
   preview: {
     select: {
