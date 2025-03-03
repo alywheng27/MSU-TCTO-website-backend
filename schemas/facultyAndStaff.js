@@ -16,6 +16,12 @@ export default defineType({
         type: 'string',
     }),
     defineField({
+      name: 'educations',
+      title: 'Educations',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'education'}}],
+    }),
+    defineField({
         name: 'advisory',
         title: 'Advisory',
         type: 'string',
