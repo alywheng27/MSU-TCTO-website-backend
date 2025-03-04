@@ -12,7 +12,7 @@ export default defineType({
     }),
     defineField({
         name: 'teachingLevel',
-        title: 'Teaching Level',
+        title: 'Position/Department',
         type: 'string',
     }),
     defineField({
