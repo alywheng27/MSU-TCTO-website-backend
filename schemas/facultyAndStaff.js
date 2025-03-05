@@ -12,7 +12,7 @@ export default defineType({
     }),
     defineField({
         name: 'teachingLevel',
-        title: 'Position/Department',
+        title: 'Academic Rank',
         type: 'string',
     }),
     defineField({
@@ -23,7 +23,7 @@ export default defineType({
     }),
     defineField({
         name: 'advisory',
-        title: 'Advisory',
+        title: 'Position/Department',
         type: 'string',
     }),
     defineField({
