@@ -20,6 +20,12 @@ export default defineType({
         hotspot: true,
       },
     }),
+    defineField({
+      name: 'link',
+      title: 'Link',
+      type: 'url',
+      validation: (Rule) => Rule.uri({allowRelative: true, scheme: ['http', 'https'] }),
+    }),
   ],
 
   preview: {
