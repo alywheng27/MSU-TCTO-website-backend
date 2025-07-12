@@ -17,5 +17,27 @@ import facultyAndStaff from './facultyAndStaff'
 import bidding from './bidding'
 import banner from './banner'
 import education from './education'
+import commenctment from './commenctment'
 
-export const schemaTypes = [article, articleSubject, college, articleTopic, articleCategory, tag, author, gazette, gazetteQuarter, annualReport, sulimbang, calendar, semester, holiday, facultyAndStaff, bidding, banner, blockContent, education]
+export const schemaTypes = [
+  article,
+  articleSubject,
+  college,
+  articleTopic,
+  articleCategory,
+  tag,
+  author,
+  gazette,
+  gazetteQuarter,
+  annualReport,
+  sulimbang,
+  calendar,
+  semester,
+  holiday,
+  facultyAndStaff,
+  bidding,
+  banner,
+  blockContent,
+  education,
+  commenctment,
+]
