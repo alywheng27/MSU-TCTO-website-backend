@@ -29,11 +29,13 @@ export default defineType({
       to: {type: 'author'},
     }),
     defineField({
-      name: 'mainImages',
-      title: 'Main Images',
-      type: 'array',
-      of: [{ type: 'image', options: { hotspot: true } }],
-      validation: (Rule) => Rule.required().min(1),
+      name: 'mainImage',
+      title: 'Main image',
+      type: 'image',
+      validation: (Rule) => Rule.required(),
+      options: {
+        hotspot: true,
+      },
     }),
     defineField({
       name: 'articleSubject',
@@ -76,8 +78,8 @@ export default defineType({
       validation: (Rule) => Rule.required(),
       options: {
         dateFormat: 'MMMM D, YYYY',
-        calendarTodayLabel: 'Today'
-      }
+        calendarTodayLabel: 'Today',
+      },
     }),
     defineField({
       name: 'featured',
@@ -96,7 +98,7 @@ export default defineType({
     select: {
       title: 'title',
       author: 'author.name',
-      media: 'mainImages.0',
+      media: 'mainImage',
     },
     prepare(selection) {
       const {author} = selection
