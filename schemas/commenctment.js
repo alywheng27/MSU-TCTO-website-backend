@@ -6,10 +6,11 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'name',
-      title: 'Name',
-      type: 'string',
+      name: 'graduate',
+      title: 'Graduate',
+      type: 'reference',
       validation: (Rule) => Rule.required(),
+      to: {type: 'graduate'},
     }),
     defineField({
       name: 'mainImage',
@@ -34,7 +35,7 @@ export default defineType({
 
   preview: {
     select: {
-      title: 'name',
+      title: 'graduate',
       media: 'mainImage',
     },
   },

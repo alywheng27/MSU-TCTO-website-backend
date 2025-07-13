@@ -18,6 +18,7 @@ import bidding from './bidding'
 import banner from './banner'
 import education from './education'
 import commenctment from './commenctment'
+import graduate from './graduate'
 
 export const schemaTypes = [
   article,
@@ -40,4 +41,5 @@ export const schemaTypes = [
   blockContent,
   education,
   commenctment,
+  graduate,
 ]
