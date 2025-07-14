@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'commenctment',
-  title: 'Commenctment',
+  name: 'commencement',
+  title: 'commencement',
   type: 'document',
   fields: [
     defineField({
@@ -35,8 +35,15 @@ export default defineType({
 
   preview: {
     select: {
-      title: 'graduate',
+      graduateName: 'graduate.name',
       media: 'mainImage',
     },
+    prepare(selection) {
+      const {graduateName, media} = selection
+      return {
+        title: graduateName || 'No graduate',
+        media,
+      }
+    }
   },
 })
