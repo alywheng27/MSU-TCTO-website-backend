@@ -6,14 +6,14 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'name',
-      title: 'Name',
+      name: 'graduate',
+      title: 'Graduate',
       type: 'string',
     }),
   ],
   preview: {
     select: {
-      title: 'name',
+      title: 'graduate',
     },
   },
 })
