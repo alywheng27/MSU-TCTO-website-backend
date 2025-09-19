@@ -20,6 +20,7 @@ import education from './education'
 import commencement from './commencement'
 import graduate from './graduate'
 import prospectus from './prospectus'
+import department from './department'
 
 export const schemaTypes = [
   article,
@@ -43,5 +44,6 @@ export const schemaTypes = [
   education,
   commencement,
   graduate,
+  department,
   prospectus,
 ]
